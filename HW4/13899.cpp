@@ -1,8 +1,5 @@
 #include<iostream>
 #include<vector>
-#include<stack>
-#include<queue>
-#include<list>
 #include<string.h>
 #include<cmath>
 using namespace std;
@@ -145,5 +142,6 @@ int main(){
     std::cout<<msg_list[endpos-1]<<endl<<dist_list[endpos-1]<<endl;
     delete [] dist_list;
     delete [] msg_list;
+    for(int i=0;i<nodes.size();i++) delete nodes[i];
     return 0;
 }
